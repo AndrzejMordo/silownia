@@ -1,0 +1,161 @@
+html {
+  font-family: Helvetica;
+}
+
+#lewy {
+  position: fixed;
+  background: navy;
+  color: white;
+  top : 10%;
+  left : 0%;
+  height : 90%;
+  width : 20%;
+  background-image : url(zdjecia/tlo1.jpg);
+}
+
+
+
+#prawy2 {
+  position: absolute;
+  background-image : url(zdjecia/tlo3.jpg);
+  color: black;
+  top : 10%;
+  left : 20%;
+  height : 90%;
+  width : 60%;
+
+
+}
+
+#prawy1 {
+  position: fixed;
+  background: RoyalBlue;
+  color: white;
+  top : 0%;
+  left : 0%;
+  height : 10%;
+  width : 100%;
+  z-index : +1;
+
+}
+
+
+
+#prawy3 {
+  position: fixed;
+  background: navy;
+  color: white;
+  top : 10%;
+  right : 0%;
+  height : 90%;
+  width : 20%;
+  background-image : url(zdjecia/tlo2.jpg);
+}
+/*
+#stopka {
+  position: fixed;
+  background: steelblue;
+  text-align: center;
+  bottom: 0%;
+  height : 5%;	
+  width : 100%;
+  clear: both;
+}
+*/
+h1, h2,  h3 ,h4 ,h5 ,p {
+ text-align : center;
+color : black;
+}
+
+form {
+  margin: 30px;
+  line-height: 3;
+}
+
+form:hover {
+  background: green;
+}
+*{
+	margin : 0;
+	padding : 0;	
+}
+
+#prawy1 ul, ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#prawy1 ul {
+	float: left;
+	background-color: #fff;
+	padding: 1px 0 1px 1px;
+	border: 1px solid #000;
+}
+
+#prawy1 ul li {
+	float: left;
+}
+
+#prawy1 ul a:link, ul a:visited {
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	background: #000 url("tlo.gif") repeat-x center;
+	color: #fff;
+	padding: 10px 20px;
+	border-right: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+#prawy1 ul a:hover {
+	background-color: #800;
+	background-image: url("tlo2.gif");
+}
+dl, dt, dd {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+dl {
+	width: 200px;
+	padding: 1px 2px;
+	background-color: #9ce;
+	border: 3px double #28e;
+
+}
+
+dt {
+	padding: 7px 15px;
+	font-weight: bold;
+	font-size: larger;
+	background-color: #25b;
+	color: #9ce;
+	text-align: right;
+	border-right: 20px solid #26d;
+	margin-top: 1px;
+}
+
+dd {
+	border-top: 1px solid #9ce;
+}
+
+dl a:link, dl a:visited {
+	display: block;
+	width: 176px;
+	text-decoration: none;
+	padding: 7px;
+	font-weight: bold;
+	background-color: #27c;
+	color: #def;
+	border-left: 10px solid #25b;
+}
+
+dl a:hover {
+	width: 166px;
+	background-color: #28e;
+	color: #fff;
+	border-left: 20px solid #26d;
+}

@@ -1,0 +1,67 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Siłownia.pl</title>
+  <link rel="stylesheet" href="styl1.css">
+  
+  <script type="text/javascript">
+			function calculateBmi() {
+				var weight = document.bmiForm.weight.value
+				var height = document.bmiForm.height.value
+				if(weight > 0 && height > 0){	
+					var finalBmi = weight/(height/100*height/100)
+					document.bmiForm.bmi.value = finalBmi
+					if(finalBmi < 18.5){
+						document.bmiForm.meaning.value = "poniżej normy"
+					}
+					if(finalBmi > 18.5 && finalBmi < 25){
+						document.bmiForm.meaning.value = "w granicach normy"
+					}
+					if(finalBmi > 25){
+						document.bmiForm.meaning.value = "powyżej normy"
+					}
+				}
+				else{
+					alert("Uzupełnij wszystkie pola poprawnie")
+				}
+			}
+		</script>
+</head>
+<body>
+  <section id="lewy">
+
+  </section>
+
+  <section id="prawy1">
+
+ <ul>
+	<li><p><a href="silownia.html">Strona główna</a></p></li>
+    <li><p><a href="o_nas.html">O mnie</a></p></li>
+    <li><p><a href="cwiczenia.html" >Ćwiczenia</a></p></li>
+    <li><p><a href="bmi.html">Kalkulator BMI</a></p></li>
+    <li><p><a href="dieta.html" >Dieta i suplementacja</a></p></li>
+	<li><p><a href="autor.html">Autor</a></p></li>
+</ul> 
+
+ </section>
+
+  <section id="prawy2">
+	<form name="bmiForm">
+			Waga(kg): <input type="text" name="weight" size="10"><br />
+			Wzrost(cm): <input type="text" name="height" size="10"><br />
+			<input type="button" value="Licz BMI" onClick="calculateBmi()"><br />
+			BMI: <input type="text" name="bmi" size="10"><br />
+			Twój wskażnik jest: <input type="text" name="meaning" size="25"><br />
+			<input type="reset" value="Reset" />
+		</form>
+  </section>
+
+  <section id="prawy3">
+    
+  </section>
+
+
+</body>
+</html>
